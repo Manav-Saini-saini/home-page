@@ -1,5 +1,6 @@
 
 @import url(./root.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
@@ -61,6 +62,7 @@
     height: 348px;
     position: absolute;
     top: 71px;
+    background-position: center;
     z-index: 2;
     max-width: 1920px;
     width: 100%;
@@ -75,6 +77,7 @@
     background-color: #F6E300;
     background-image: url(/assets/images/png/burgers.png);
     background-repeat: no-repeat;
+    background-position: center;
     max-width: 1920px;
 }
 .container-three{
@@ -93,7 +96,7 @@
     margin: 0 auto;
 }
 .open-image{
-    margin: -65px auto 0;
+    margin: -61px auto 0;
 }
 .phase-four{
     background-color: #FFF03F;
@@ -122,6 +125,7 @@
     color: white;
     font-size: var(--fs-custom-20);
     line-height: 100%;
+    font-family: "Roboto", sans-serif;
     border: 1px solid #F4241E;
 }
 .btn-2:hover{
@@ -149,7 +153,7 @@
     background:#F6E300;
     display:flex;
     justify-content:center;
-    padding: 114px 20px 111px;
+    padding: 112px 20px 112px;
     font-family:sans-serif;
 }
 
@@ -203,23 +207,80 @@
 
 .roadmap{
     background-color: #F6E300;
+    position: relative;
 
 }
 
 .container-seven{
-    
     width:90%;
     max-width:1200px;
     margin:auto;
-    padding:73px 0 107px;
+    padding:77px 0 110px;
 }
+.burger1{
+    position: absolute;
+    z-index: 2;
+    top: 66px;
+    left: 376px;
 
+}
+.burger2{
+    position: absolute;
+    z-index: 2;
+    top: 375px;
+    left: 99px;
+
+}
+.burger3{
+    position: absolute;
+    z-index: 2;
+    top: 282px;
+    right: 478px;
+
+}
+.burger4{
+    position: absolute;
+    z-index: 2;
+    top: 819px;
+    right: 78px;
+
+}
+.burger5{
+    position: absolute;
+    z-index: 2;
+    top: 608px;
+    left: 485px;
+
+}
+.burger6{
+    position: absolute;
+    z-index: 2;
+    top: 885px;
+    left: 67px;
+
+}
+.burger7{
+    position: absolute;
+    z-index: 2;
+    top: 830px;
+    right: 516px;
+
+}
+.burger8{
+    position: absolute;
+    z-index: 2;
+    top: 92px;
+    right: 60px;
+    rotate: 15%;
+
+}
 .roadmap1{
     text-align:center;
     font-size:var(--fs-custom-48);
     font-weight:700;
         margin-bottom: 98px;
-
+    position: relative;
+    z-index: 4;
 }
 
 .timeline{
@@ -238,11 +299,13 @@
     position:relative;
     width:100%;
     min-height:214px;
+    z-index: 4;
     padding-bottom: 80px;
 }
 .roadmap-items{
     position:relative;
     width:100%;
+    z-index: 4;
     min-height:178px;
 }
 .dot{
@@ -465,6 +528,8 @@
     }
     .card-three{
         grid-template-columns: repeat(2,1fr);
+        max-width: 550px;
+        margin: 0 auto;
     }
 }
 @media (max-width:992px) {
@@ -524,10 +589,36 @@
 }
 .card-three{
         grid-template-columns: 1fr;
+        margin: 0 auto;
+        max-width: 280px;
     }
     .bottom-logo{
         width: 400px;
         height: auto;
+    }
+    .burger1{
+        left: 20px;
+    }
+    .burger2{
+        left: 20%px;
+    }
+    .burger3{
+        display: none;
+    }
+    .burger4{
+        right: 10px;
+    }
+    .burger5{
+        display: none;
+    }
+    .burger6{
+        display: none;
+    }
+    .burger7{
+        display: none;
+    }
+    .burger8{
+        right: 20px;
     }
 }
 @media (max-width:480px) {
